@@ -1,0 +1,19 @@
+{
+  "name": "fault-finders",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fault Finders: a Celtic 8-bit RPG for Computer Maintenance Chapter 4, with class leaderboard and admin panel. Next.js + Neon + Vercel Blob.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@vercel/blob": "2.8.2",
+    "next": "15.5.28",
+    "pg": "8.23.1",
+    "react": "19.2.9",
+    "react-dom": "19.2.9"
+  },
+  "engines": { "node": ">=20" }
+}
