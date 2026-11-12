@@ -62,7 +62,8 @@ This works like Troubleshooter Tiles, plus one extra step for music storage. Use
 You only need this to upload your own music. The built-in music works without it.
 
 1. In **Storage**, click **Create Database > Blob**.
-2. Connect it to `fault-finders`. Vercel adds `BLOB_READ_WRITE_TOKEN`.
+2. Set access to **Public**, because students' phones need to play the files. You can't change this later.
+3. Connect it to `fault-finders`. Vercel adds `BLOB_STORE_ID`, or `BLOB_READ_WRITE_TOKEN` on older setups. Either works, and you don't type anything.
 
 ### 5. Redeploy
 

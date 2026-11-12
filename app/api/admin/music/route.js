@@ -8,7 +8,7 @@ export const GET = handler(async () => {
   const rows = await query(`SELECT slot, url, filename, updated_at FROM music`);
   const bySlot = Object.fromEntries(rows.map((r) => [r.slot, r]));
   return json({
-    storageReady: Boolean(process.env.BLOB_READ_WRITE_TOKEN),
+    storageReady: Boolean(process.env.BLOB_READ_WRITE_TOKEN || process.env.BLOB_STORE_ID),
     slots: MUSIC_SLOTS.map((s) => ({ ...s, url: bySlot[s.slot]?.url || null, filename: bySlot[s.slot]?.filename || null })),
   });
 }, { admin: true });
